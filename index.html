@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Часы Longines</title>
+	<link rel="stylesheet" type="text/css" href="css/itc-slider.css">
+	<link rel="stylesheet" type="text/css" href="css/accordion.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lobster&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+	<div class="container">
+		<nav class="nav">
+			<h1 class="logo">Часы LonGines</h1>
+         <ul class="nav__list">
+         	<li class="nav__item">Главная</li>
+            <li class="nav__item">Часы</li>
+            <li class="nav__item">Модели</li>
+            <li class="nav__item">Общее</li>
+            <li class="nav__item">Компания</li>
+         </ul>
+         <div class="burger"onclick="burgerClick()">
+         	<div class="burger__line burger__line1"></div>
+         	<div class="burger__line burger__line2"></div>
+         	<div class="burger__line burger__line3"></div>
+         </div>
+		</nav>
+		<button class="btn__menu">Меню</button>
+		<div class="menu is-active">
+			<ol class="menu__list">
+				<li class="menu__item">
+					<a class="menu__link" href="">Личный кабинет</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="">Корзина</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="">Скидки
+					</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="">Акции</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="">Заказы</a>
+				</li>
+				<li class="menu__item">
+					<div class="theme">
+						<h4 class="theme__title">
+							Тема
+						</h4>
+						<ul class="theme__list">
+							<li class="theme__item">
+								<div class="theme__light" onclick="choiceLight()"></div>
+							</li>
+							<li class="theme__item">
+								<div class="theme__dark" onclick="choiceDark()"></div>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ol>
+		</div>
+	</div>
+</header>
+<main class="main">
+	<section class="shop">
+		<div class="container">
+			<h1 class="shop__title">Часы</h1>
+			<div class="itc-slider" data-slider="itc-slider">
+  <div class="itc-slider-wrapper">
+    <div class="itc-slider-items">
+      <div class="itc-slider-item">
+        <!-- Контент 1 слайда -->
+        <img class="shop__img" src="img/Часы.jpg">
+      </div>
+      <div class="itc-slider-item">
+        <!-- Контент 2 слайда -->
+        <img class="shop__img" src="img/longines2.jpg">
+      </div>
+      <div class="itc-slider-item">
+        <!-- Контент 3 слайда -->
+        <img class="shop__img" src="img/longines3.webp">
+      </div>
+    </div>
+  </div>
+  <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+  <button class="itc-slider-btn itc-slider-btn-prev"></button>
+  <button class="itc-slider-btn itc-slider-btn-next"></button>
+</div>
+<div class="accordion" id="accordion-1"> 
+ <div class="accordion__item">
+ <div class="accordion__header">
+ 	<h2 class="shop__title">Описание
+			</h2>
+ </div>
+<div class="accordion__body">
+	<p class="shop__text">Швейцарская компания Longines создает произведения часового искусства с момента основания бренда. Сегодня коллекция The Longines Master Collection является одним из столпов компании, успех которой,  в области традиционного часового мастерства, начался с запуска коллекции в 2005 году. </p>
+</div>
+ </div>
+ <div class="accordion__item">
+<div class="accordion__header">
+ 	<h2 class="shop__title"> <h2 class="shop__title">
+			Цена	   
+			</h2>
+ </div>
+<div class="accordion__body"><p class="shop__price">4 260$</p> 
+		<button class="shop__btn" id="btn" onclick="buy()">Купить</button>
+</div>
+ </div>
+
+
+</div>
+
+
+			</div>		
+	</section>
+	<section class="maps">
+		<div class="container container__maps">
+			<h2 class="maps__title">Точки самовывоза</h2>
+			<div class="gy__maps">	
+        <div class="google">
+        	<h3 class="google__title">Google-карты</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17453.016174690158!2d35.86602855!3d56.8523413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b687b031c51bcb%3A0x8107a9e97e20290a!2z0KDRg9Cx0LjQvQ!5e0!3m2!1sru!2sru!4v1708349327242!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="yandex">
+        	<h3 class="yandex__title">Яндекс-карты</h3>
+        	<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab1831b6b5c526ab2f35f7a2e881325500e76e67cfdffbe3550acf3ff37d33c08&amp;source=constructor" width="540" height="427" frameborder="0"></iframe>
+          </div>
+          </div>
+
+		</div>
+	</section>
+	<section class="clock">
+		<div class="container container__clock">
+			<div id="time"></div>
+			
+		</div>
+	</section>
+	<section class="video">
+		<video id="myVideo" autoplay muted loop>
+			<source src="video/video1.mp4" type="video/mp4">
+				
+		</video>
+		<div class="video__content">
+			<div class="container">
+				<h1 class="video__title">
+					Часы
+				</h1>
+				<p class="video__text">Самые лучшие и стабильные часы от Швейцарской компании Longines</p>
+				<button class="video__btn" id="play" onclick="play()" >Pause</button>
+				<button class="video__btn" id="mute" onclick="mute()">Muted</button>
+			</div>
+		</div>
+	</section>
+</main>
+<footer class="footer">
+	<div class="container">
+		<h3 class="footer__title">&copy;Все права защищены</h3>
+	</div>
+</footer>
+
+
+<script src="scripts/script.js"></script>
+<script src="scripts/menu.js"></script>
+<script src="scripts/itc-slider.js"></script>
+<script src="scripts/accordion.js"></script>
+<script src="scripts/theme.js"></script>
+<script src="scripts/burger.js"></script>
+<script src="scripts/time.js" ></script>
+<script src="scripts/video-player.js"></script>
+</body>
+</html>
